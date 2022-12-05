@@ -1,6 +1,7 @@
+import { style } from "@mui/system";
 import styled from "styled-components";
 
-import Banner from "../../assets/banner.jpg";
+import Banner from "../../assets/banner-login.jpg";
 
 export const Container = styled.div`
   width: 100vw;
@@ -17,16 +18,20 @@ export const LeftContainer = styled.div`
   } ;
 `;
 export const LeftArea = styled.div`
-  padding: 50px 156px;
   display: flex;
-  max-width: 386px;
   width: 100%;
   flex-direction: column;
-  margin-right: 200px;
+  //margin-right: 200px;
+
+  .leftArea-header {
+    width: 100%;
+    background-color: #2f67b2;
+    display: flex;
+  }
 
   .title {
     display: flex;
-    margin-top: 155px;
+    margin-top: 60px;
     margin-bottom: 10px;
     align-items: center;
 
@@ -38,34 +43,34 @@ export const LeftArea = styled.div`
   }
 `;
 export const Logo = styled.img`
-  height: 50px;
-  width: 167px;
+  height: 147px;
+  width: 267px;
+  border-radius: 30px;
+  object-fit: cover;
+  margin: auto;
 
   @media (max-width: 550px) {
-    position: absolute;
+    height: 100px;
+    width: 167px;
     display: flex;
     top: 80px;
     left: 130px;
+    margin-left: auto;
+    margin-bottom: 10px;
   }
 `;
 export const Form = styled.form`
-  position: relative;
   width: 382px;
   display: flex;
   flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
 
   .input-area {
-    position: relative;
     display: flex;
     align-items: center;
     flex-direction: row-reverse;
     height: 75px;
-
-    .icon-eye {
-      color: #466aa9;
-      position: absolute;
-      right: 145px;
-    }
   }
   .checkBox-container {
     display: flex;
@@ -96,6 +101,7 @@ export const Form = styled.form`
       display: flex;
       align-items: center;
       color: #466aa9;
+      text-decoration: none;
     }
   }
   .rules {
@@ -104,6 +110,8 @@ export const Form = styled.form`
     margin-top: 40px;
     display: flex;
     align-items: center;
+    cursor: pointer;
+
     p {
       font-family: sans-serif;
       font-style: normal;
@@ -138,6 +146,10 @@ export const Form = styled.form`
     span {
       color: #466aa9;
       font-weight: bold;
+
+      a {
+        text-decoration: none;
+      }
     }
   }
 
@@ -227,6 +239,12 @@ export const ButtonSubmit = styled.button`
   color: #fff;
   font-size: 16px;
   margin-top: 23px;
+
+  &&:hover {
+    background: #3a578a;
+    box-shadow: 0px 0px 30px rgba(58, 87, 138, 0.5);
+    cursor: pointer;
+  }
 `;
 
 export const RightContainer = styled.div`
@@ -243,5 +261,99 @@ export const RightContainer = styled.div`
 
   @media (max-width: 550px) {
     display: none;
+  }
+`;
+
+export const Modal = styled.div`
+  background-color: #ccc;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  opacity: 0.5;
+`;
+
+export const CardTerms = styled.div`
+  display: flex;
+  padding: 40px;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  height: 780px;
+  width: 776px;
+  background: #ffffff;
+  border-radius: 16px;
+
+  .body-terms {
+    margin-top: 24px;
+    overflow: auto;
+    padding: 8px;
+    ::-webkit-scrollbar {
+      width: 6px;
+      height: 227.94px;
+      right: 1px;
+      top: calc(50% - 227.94px / 2 - 158.03px);
+      border-radius: 60px;
+    }
+    ::-webkit-scrollbar-thumb {
+      border-radius: 50px;
+      background: #bbbbbb;
+    }
+  }
+
+  h1 {
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 36px;
+    text-align: center;
+    color: #4b4b4b;
+
+    @media (max-width: 800px) {
+      font-size: 23px;
+    }
+  }
+  p {
+    width: 673px;
+    @media (max-width: 800px) {
+      width: 380px;
+    }
+  }
+
+  @media (max-width: 800px) {
+    width: 500px;
+  }
+`;
+
+export const CardTermsContainer = styled.div`
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+
+export const ButtonTerms = styled.button`
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  border-radius: 25px;
+  border: #466aa9 2px solid;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 24px;
+  width: 360px;
+  height: 56px;
+  font-size: 16px;
+  margin-top: 40px;
+  color: #466aa9;
+  cursor: pointer;
+
+  &&:hover {
+    background: #466aa9;
+    color: white;
   }
 `;
