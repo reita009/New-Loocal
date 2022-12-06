@@ -196,7 +196,7 @@ export const CardMsn = styled.div`
   position: absolute;
   width: 776px;
   height: 340px;
-  background: #ffffff;
+  background: #fff;
   border-radius: 16px;
 
   .checkIcon {
@@ -223,6 +223,10 @@ export const CardMsn = styled.div`
     line-height: 24px;
     text-align: center;
     color: #4b4b4b;
+  }
+
+  @media (max-width: 780px) {
+    width: 350px;
   }
 `;
 
@@ -273,5 +277,14 @@ export const CardOff = styled.div`
     button {
       margin-right: 15px;
     }
+
+    @media (max-width: 780px) {
+      flex-direction: column;
+    }
+  }
+
+  @media (max-width: 780px) {
+    height: 340px;
+    width: 350px;
   }
 `;

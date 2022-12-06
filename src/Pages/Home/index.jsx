@@ -382,7 +382,9 @@ const Home = () => {
                 </p>
               </div>
 
-              <C.ButtonSubmit>Entrar</C.ButtonSubmit>
+              <Link to="/backoffice">
+                <C.ButtonSubmit>Entrar</C.ButtonSubmit>
+              </Link>
 
               <div className="help">
                 <p>
