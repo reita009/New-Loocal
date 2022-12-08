@@ -5,7 +5,7 @@ import { BrowserRouter, Route, Routes, Link } from "react-router-dom";
 import Home from "./Pages/Home";
 import ForgotPassword from "./Pages/ForgotPassword";
 import Help from "./Pages/Help";
-import DashBoard from "./Pages/Dashboard";
+import NavBar from "./Pages/NavBar";
 
 function App() {
   return (
@@ -16,7 +16,7 @@ function App() {
             <Route path="/login" element={<Home />} />
             <Route path="/login/senha" element={<ForgotPassword />} />
             <Route path="/login/ajuda" element={<Help />} />
-            <Route path="/backoffice" element={<DashBoard />} />
+            <Route path="/backoffice" element={<NavBar />} />
           </Routes>
         </>
       </div>
