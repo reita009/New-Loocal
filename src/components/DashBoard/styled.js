@@ -123,6 +123,60 @@ export const ContainerBody = styled.div`
   .cardLeft {
     margin-right: 40px;
   }
+
+  .header-request {
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    .header-request-left {
+      display: flex;
+      align-items: center;
+      width: 100vh;
+
+      .icon {
+        color: #466aa9;
+        cursor: pointer;
+      }
+      span {
+        margin-left: 11px;
+        font-family: sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #4b4b4b;
+      }
+    }
+
+    .button-whrap {
+      height: 100%;
+      display: flex;
+      align-items: center;
+
+      button {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 16px 24px;
+        gap: 8px;
+        width: 360px;
+        height: 56px;
+        background: #466aa9;
+        border-radius: 50px;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        font-family: sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+      }
+    }
+  }
 `;
 
 export const CardDashboard = styled.div`
@@ -134,6 +188,55 @@ export const CardDashboard = styled.div`
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   display: flex;
   padding: 30px;
+
+  .card-body {
+    display: flex;
+    flex-direction: column;
+
+    .card-header {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      margin-bottom: 13px;
+
+      .icon {
+        color: #466aa9;
+        margin-left: 30px;
+        cursor: pointer;
+      }
+    }
+
+    span {
+      font-family: sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 24px;
+      width: 315px;
+      height: 24px;
+      color: #4b4b4b;
+      margin-bottom: 16px;
+    }
+    P {
+      width: 449px;
+      height: 24px;
+      font-family: sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: #4b4b4b;
+      margin-bottom: 69px;
+    }
+    h1 {
+      font-family: sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 36px;
+      color: #466aa9;
+    }
+  }
 
   .card-body-left {
     display: flex;
@@ -203,6 +306,7 @@ export const CardDashboard = styled.div`
       font-size: 28px;
       line-height: 36px;
       color: #466aa9;
+      cursor: ${(props) => (props.delivery ? "pointer" : "")};
     }
   }
   .card-body-right {
@@ -220,4 +324,15 @@ export const CardDashboard = styled.div`
       cursor: pointer;
     }
   }
+`;
+
+export const ButtonRequests = styled.h1`
+  height: 36px;
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 36px;
+  color: #466aa9;
+  cursor: ${(props) => (props.delivery ? "pointer" : "")};
 `;
