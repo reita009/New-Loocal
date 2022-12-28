@@ -4,6 +4,7 @@ import { useState } from "react";
 
 import NoticeStage from "../../components/NoticeStage";
 import DashBoard from "../../components/DashBoard";
+import Finance from "../../components/Finance";
 
 import Logo from "../../assets/Logo.png";
 
@@ -198,6 +199,7 @@ const NavBar = () => {
 
         {check[0].notice && <NoticeStage />}
         {check[0].dashboard && <DashBoard />}
+        {check[0].finance && <Finance />}
       </C.Container>
     </>
   );
