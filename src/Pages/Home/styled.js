@@ -20,13 +20,18 @@ export const LeftContainer = styled.div`
 export const LeftArea = styled.div`
   display: flex;
   width: 100%;
+
   flex-direction: column;
   //margin-right: 200px;
 
   .leftArea-header {
     width: 100%;
+    height: 100px;
     background-color: #2f67b2;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
   }
 
   .title {

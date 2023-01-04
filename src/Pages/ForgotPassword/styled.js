@@ -25,8 +25,12 @@ export const leftArea = styled.div`
 
   .header-leftArea {
     background-color: #2f67b2;
+    height: 100px;
     width: 100%;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
   }
   @media (max-width: 550px) {
     width: 100%;

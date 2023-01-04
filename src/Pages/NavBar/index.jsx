@@ -7,8 +7,6 @@ import DashBoard from "../../components/DashBoard";
 import Finance from "../../components/Finance";
 import Manager from "../../components/Manager";
 
-import Logo from "../../assets/Logo.png";
-
 //icons
 import LineAxisIcon from "@mui/icons-material/LineAxis";
 import AssignmentIcon from "@mui/icons-material/Assignment";
@@ -82,7 +80,7 @@ const NavBar = () => {
         {showMobile == false && (
           <C.LeftBar>
             <div className="wrhap-logo">
-              <C.Logo src={Logo} />
+              <h1>Logo</h1>
 
               <ArrowBackIosNewIcon className="icon" onClick={handleMobile} />
             </div>

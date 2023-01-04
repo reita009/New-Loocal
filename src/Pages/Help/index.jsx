@@ -2,7 +2,6 @@ import * as C from "./styled";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 
-import Logo from "../../assets/Logo.png";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
 import CheckIcon from "@mui/icons-material/Check";
@@ -60,7 +59,7 @@ const Help = () => {
 
       <C.leftArea>
         <C.Header>
-          <img src={Logo} />
+          <h1>Logo</h1>
         </C.Header>
 
         <C.Form>

@@ -29,16 +29,12 @@ export const leftArea = styled.div`
 
 export const Header = styled.header`
   width: 100%;
+  height: 100px;
   background-color: #2f67b2;
   display: flex;
-
-  img {
-    height: 147px;
-    width: 267px;
-    border-radius: 30px;
-    object-fit: cover;
-    margin: auto;
-  }
+  justify-content: center;
+  align-items: center;
+  color: #fff;
 `;
 
 export const Form = styled.form`

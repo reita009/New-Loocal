@@ -25,6 +25,11 @@ export const LeftBar = styled.div`
 
   .wrhap-logo {
     display: flex;
+    background-color: #466aa9;
+    height: 100px;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
 
     .icon {
       position: absolute;

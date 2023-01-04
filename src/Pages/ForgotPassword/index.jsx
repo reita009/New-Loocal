@@ -2,7 +2,6 @@ import * as C from "./styled";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-import Logo from "../../assets/Logo.png";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
 
@@ -46,7 +45,7 @@ const ForgotPassword = () => {
         )}
         <C.leftArea>
           <div className="header-leftArea">
-            <C.Logo src={Logo} />
+            <h1>Logo</h1>
           </div>
 
           <C.Form>
