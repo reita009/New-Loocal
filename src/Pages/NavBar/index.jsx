@@ -21,7 +21,7 @@ import Logo from "../../assets/Logo.png";
 
 const NavBar = () => {
   const [check, setCheck] = useState([
-    { notice: false },
+    { notice: true },
     { dashboard: false },
     { requests: false },
     { finance: false },
@@ -132,7 +132,7 @@ const NavBar = () => {
 
             <C.Footer>
               <C.BtnGroup>
-                <Link to="/login">
+                <Link to="/">
                   <C.BtnExit>
                     <ExitToAppIcon className="icon" />
                     <span>Sair</span>
@@ -188,7 +188,7 @@ const NavBar = () => {
 
             <C.Footer>
               <C.BtnGroup>
-                <Link to="/login">
+                <Link to="/">
                   <C.BtnExit mobile>
                     <ExitToAppIcon className="icon" />
                   </C.BtnExit>

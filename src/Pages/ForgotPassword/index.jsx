@@ -53,7 +53,7 @@ const ForgotPassword = () => {
 
           <C.Form>
             <div className="back-login">
-              <Link to="/login">
+              <Link to="/">
                 <ArrowBackIcon className="icon" />
               </Link>
               <p>Login</p>

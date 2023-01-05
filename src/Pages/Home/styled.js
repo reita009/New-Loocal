@@ -170,7 +170,6 @@ export const Form = styled.form`
 `;
 
 export const Title = styled.h1`
-  font-family: sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 28px;

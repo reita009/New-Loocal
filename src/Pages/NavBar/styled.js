@@ -85,7 +85,6 @@ export const BtnBars = styled.div`
   border-left: ${(props) => (props.active ? " 7px solid #466aa9" : "none")};
 
   .icon {
-    color: ${(props) => (props.danger ? "red" : "#bbbbbb")};
     color: ${(props) => (props.active ? "#466aa9" : "#bbbbbb")};
     margin-right: 11px;
   }
@@ -106,6 +105,12 @@ export const BtnBars = styled.div`
       color: #466aa9;
     }
   }
+
+  ${(props) =>
+    props.active &&
+    `
+    pointer-events: none;
+  `}
 `;
 
 export const BtnExit = styled.div`

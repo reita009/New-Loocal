@@ -8,7 +8,7 @@ export const Container = styled.div`
 `;
 
 export const ContainerBody = styled.div`
-  height: 80%;
+  height: 90%;
   width: 90%;
   margin-left: auto;
   margin-right: auto;
@@ -249,7 +249,7 @@ export const RequestContainer = styled.div`
   .tr-body-whrap {
     display: flex;
     flex-direction: column;
-    height: 560px;
+    height: calc(100vh - 400px);
     overflow: auto;
     width: 100%;
     ::-webkit-scrollbar {

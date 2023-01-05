@@ -52,7 +52,7 @@ const Help = () => {
             <h1>Tem certeza de que deseja sair?</h1>
             <div className="button-wharp">
               <C.CardButton onClick={handleBack}>Voltar</C.CardButton>
-              <Link to="/login">
+              <Link to="/">
                 <C.CardButton danger>Sair</C.CardButton>
               </Link>
             </div>
@@ -67,7 +67,7 @@ const Help = () => {
 
         <C.Form>
           <div className="login">
-            <Link to="/login">
+            <Link to="/">
               <ArrowBackIcon className="icon" />
             </Link>
             <h1>Login</h1>
