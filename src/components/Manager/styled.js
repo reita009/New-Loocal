@@ -2,113 +2,9 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   width: 80%;
-  height: 100vh;
   display: flex;
   flex-direction: column;
-`;
-
-export const Header = styled.header`
-  width: 90%;
-  height: 72px;
-  border-radius: 24px;
-  background-color: #fff;
-  margin-top: 16px;
-  margin-left: auto;
-  margin-right: auto;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  align-items: center;
-  display: flex;
-  padding: 0px 40px;
-  justify-content: space-between;
-
-  h1 {
-    font-family: sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 28px;
-    line-height: 36px;
-    color: #4b4b4b;
-  }
-`;
-
-export const UserBalanceStage = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  span {
-    font-family: sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 24px;
-    text-align: center;
-    color: #4b4b4b;
-    margin-right: 8px;
-  }
-`;
-
-export const BalanceValue = styled.div`
-  display: flex;
-  align-items: center;
-  background: #f5f8fa;
-  border-radius: 80px;
-
-  .value {
-    display: flex;
-
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .icon {
-    color: #466aa9;
-    margin-right: 11px;
-    margin-left: 14px;
-  }
-  span {
-    margin-right: 16px;
-    font-family: sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 21px;
-    color: #4b4b4b;
-  }
-`;
-
-export const AddCredit = styled.button`
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 8px 16px;
-  width: 175px;
-  height: 40px;
-  background: #466aa9;
-  border-radius: 80px;
-  font-family: sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  border: none;
-  color: #ffffff;
-  cursor: pointer;
-`;
-
-export const UserName = styled.div`
-  height: 40px;
-  display: flex;
-  align-items: center;
-  margin-left: 40px;
-
-  p {
-    font-family: sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    color: #4b4b4b;
-  }
+  height: 2000px;
 `;
 
 export const Form = styled.form`
@@ -177,6 +73,8 @@ export const Form = styled.form`
     .box {
       display: flex;
       flex-direction: column;
+      margin-right: 5px;
+      margin-left: 5px;
     }
     .input-active {
       display: flex;

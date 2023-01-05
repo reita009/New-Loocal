@@ -1,30 +1,14 @@
 import * as C from "./styled";
 
+import Header from "../AddCredit/index";
+
 //icons
 import AttachMoneyIcon from "@mui/icons-material/AttachMoney";
 
 const Manager = () => {
   return (
     <C.Container>
-      <C.Header>
-        <h1>Gerenciar dados</h1>
-        <C.UserBalanceStage>
-          <span>Meu saldo</span>
-          <C.BalanceValue>
-            <div className="value">
-              <AttachMoneyIcon className="icon" />
-              <span>R$:5,585</span>
-              <C.AddCredit>Adicionar créditos</C.AddCredit>
-            </div>
-          </C.BalanceValue>
-          <C.UserName>
-            <p>
-              olá, <span>Dunkan</span>
-            </p>
-          </C.UserName>
-        </C.UserBalanceStage>
-      </C.Header>
-
+      <Header />
       <C.Form>
         <div className="title">
           <h1>Dados do responsável</h1>

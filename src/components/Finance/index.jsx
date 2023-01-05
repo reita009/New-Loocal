@@ -1,5 +1,7 @@
 import * as C from "./styled";
 
+import Header from "../AddCredit/index";
+
 //icons
 import AttachMoneyIcon from "@mui/icons-material/AttachMoney";
 import KeyboardArrowLeftIcon from "@mui/icons-material/KeyboardArrowLeft";
@@ -11,28 +13,7 @@ const Finance = () => {
   return (
     <>
       <C.Container>
-        <C.Header>
-          <h1>Extrato financeiro</h1>
-          <div className="header-right">
-            <C.UserBalanceStage>
-              <span>Meu saldo</span>
-
-              <C.BalanceValue>
-                <div className="value">
-                  <AttachMoneyIcon className="icon" />
-                  <span>R$5,558</span>
-                  <C.AddCredit>Adicionar créditos</C.AddCredit>
-                </div>
-              </C.BalanceValue>
-              <C.UserName>
-                <p>
-                  Olá, <span>Dunkan!</span>
-                </p>
-              </C.UserName>
-            </C.UserBalanceStage>
-          </div>
-        </C.Header>
-
+        <Header />
         <C.Search>
           <div className="search-left">
             <C.InputSearch

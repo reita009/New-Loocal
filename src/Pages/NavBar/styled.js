@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   width: 100%;
-  height: 100vh;
+  padding-bottom: 30px;
   background-color: #f5f8fa;
   display: flex;
 `;
@@ -14,9 +14,9 @@ export const LeftBar = styled.div`
   background-color: #fff;
   display: flex;
   flex-direction: column;
+  padding-bottom: 30px;
 
   .mobile-BtnGroup {
-    margin-top: 220px;
     .icon {
       margin-left: auto;
       margin-right: auto;
@@ -26,7 +26,7 @@ export const LeftBar = styled.div`
   .wrhap-logo {
     display: flex;
     background-color: #466aa9;
-    height: 100px;
+    height: 180px;
     color: #fff;
     justify-content: center;
     align-items: center;
@@ -59,6 +59,7 @@ export const BtnGroup = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 100px;
 
   p {
     font-family: sans-serif;
@@ -141,7 +142,6 @@ export const Footer = styled.footer`
   height: 200px;
   width: 100%;
   margin-top: auto;
-  padding-top: 80px;
 `;
 export const DateFooter = styled.p`
   display: ${(props) => (props.mobile ? "none" : "flex")};

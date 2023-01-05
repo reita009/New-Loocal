@@ -1,6 +1,6 @@
 import * as C from "./styled";
 
-import IconLoocal from "../../assets/iconLoocal.png";
+import Header from "../AddCredit/index";
 
 //icons
 import AttachMoneyIcon from "@mui/icons-material/AttachMoney";
@@ -9,29 +9,13 @@ import KeyboardArrowLeftIcon from "@mui/icons-material/KeyboardArrowLeft";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 import KeyboardDoubleArrowLeftIcon from "@mui/icons-material/KeyboardDoubleArrowLeft";
 import KeyboardDoubleArrowRightIcon from "@mui/icons-material/KeyboardDoubleArrowRight";
+import IconLoocal from "../../assets/iconLoocal.png";
 
 const NoticeStage = () => {
   return (
     <>
       <C.Container>
-        <C.Header>
-          <h1>Notícia</h1>
-          <C.UserBalanceStage>
-            <span>Meu saldo:</span>
-            <C.BalanceValue>
-              <div className="value">
-                <AttachMoneyIcon className="icon" />
-                <span>R$5,558</span>
-                <C.AddCredit>Adicionar créditos</C.AddCredit>
-              </div>
-            </C.BalanceValue>
-            <C.UserName>
-              <p>
-                Olá, <span>Dunkan!</span>
-              </p>
-            </C.UserName>
-          </C.UserBalanceStage>
-        </C.Header>
+        <Header />
         <C.PostNotice>
           <div className="logo-whrap">
             <img src={IconLoocal} />
