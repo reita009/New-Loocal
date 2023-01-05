@@ -13,7 +13,7 @@ const Finance = () => {
   return (
     <>
       <C.Container>
-        <Header />
+        <Header type="Extrato financeiro" />
         <C.Search>
           <div className="search-left">
             <C.InputSearch

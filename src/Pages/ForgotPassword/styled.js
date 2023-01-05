@@ -23,6 +23,10 @@ export const leftArea = styled.div`
   display: flex;
   flex-direction: column;
 
+  img {
+    height: 100px;
+  }
+
   .header-leftArea {
     background-color: #2f67b2;
     height: 100px;

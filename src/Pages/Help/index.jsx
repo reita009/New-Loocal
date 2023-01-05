@@ -6,6 +6,9 @@ import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
 import CheckIcon from "@mui/icons-material/Check";
 
+//images
+import Logo from "../../assets/Logo.png";
+
 const Help = () => {
   const [showModal, setShowModal] = useState(false);
   const [off, setOff] = useState(false);
@@ -59,7 +62,7 @@ const Help = () => {
 
       <C.leftArea>
         <C.Header>
-          <h1>Logo</h1>
+          <img src={Logo} alt="" />
         </C.Header>
 
         <C.Form>

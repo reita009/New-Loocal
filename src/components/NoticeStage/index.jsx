@@ -15,7 +15,7 @@ const NoticeStage = () => {
   return (
     <>
       <C.Container>
-        <Header />
+        <Header type="Notícias" />
         <C.PostNotice>
           <div className="logo-whrap">
             <img src={IconLoocal} />

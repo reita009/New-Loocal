@@ -8,7 +8,7 @@ import AttachMoneyIcon from "@mui/icons-material/AttachMoney";
 const Manager = () => {
   return (
     <C.Container>
-      <Header />
+      <Header type="Gerenciar dados" />
       <C.Form>
         <div className="title">
           <h1>Dados do responsável</h1>

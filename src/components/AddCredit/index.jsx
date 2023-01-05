@@ -7,7 +7,7 @@ import ConfirmationNumberIcon from "@mui/icons-material/ConfirmationNumber";
 import PixIcon from "@mui/icons-material/Pix";
 import HelpOutlineIcon from "@mui/icons-material/HelpOutline";
 
-const AddCredit = () => {
+const AddCredit = (props) => {
   const [check, setCheck] = useState([{ requests: false }, { modal: false }]);
   const [activeButton, setActiveButton] = useState([
     { credit: false },
@@ -63,7 +63,7 @@ const AddCredit = () => {
   return (
     <>
       <C.Header>
-        <h1>Dashboard</h1>
+        <h1>{props.type}</h1>
         <C.UserBalanceStage>
           <span>Meu saldo:</span>
           <C.BalanceValue>

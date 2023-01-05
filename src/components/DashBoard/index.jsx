@@ -23,10 +23,29 @@ const DashBoard = () => {
     { pix: false },
   ]);
 
+  const handleClick = (value) => {
+    switch (value) {
+      case "requests":
+        if (check[0].requests) {
+          setCheck([{ requests: false }]);
+        } else {
+          setCheck([{ requests: true }]);
+        }
+        break;
+      case "modal":
+        if (check[0].modal) {
+          setCheck([{ modal: false }]);
+        } else {
+          setCheck([{ modal: true }]);
+        }
+        break;
+    }
+  };
+
   return (
     <>
       <C.Container>
-        <Header />
+        <Header type="Dashboard" />
         {check[0].requests == false && (
           <C.ContainerBody>
             <div className="cardLeft">

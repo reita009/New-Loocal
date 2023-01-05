@@ -16,6 +16,9 @@ import ExitToAppIcon from "@mui/icons-material/ExitToApp";
 import ChatIcon from "@mui/icons-material/Chat";
 import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
 
+//images
+import Logo from "../../assets/Logo.png";
+
 const NavBar = () => {
   const [check, setCheck] = useState([
     { notice: false },
@@ -80,7 +83,7 @@ const NavBar = () => {
         {showMobile == false && (
           <C.LeftBar>
             <div className="wrhap-logo">
-              <h1>Logo</h1>
+              <img src={Logo} alt="" />
 
               <ArrowBackIosNewIcon className="icon" onClick={handleMobile} />
             </div>

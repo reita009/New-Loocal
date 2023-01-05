@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 
 //img
-
+import Logo from "../../assets/Logo.png";
 //icons
 import RemoveRedEyeIcon from "@mui/icons-material/RemoveRedEye";
 import SignLanguageIcon from "@mui/icons-material/SignLanguage";
@@ -341,7 +341,7 @@ const Home = () => {
         <C.LeftContainer>
           <C.LeftArea>
             <div className="leftArea-header">
-              <h1>Logo</h1>
+              <img src={Logo} alt="" />
             </div>
             <C.Form>
               <div className="title">

@@ -32,6 +32,11 @@ export const LeftArea = styled.div`
     align-items: center;
     justify-content: center;
     color: #fff;
+
+    img {
+      height: 100px;
+      border: none;
+    }
   }
 
   .title {

@@ -5,6 +5,9 @@ import { Link } from "react-router-dom";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
 
+//images
+import Logo from "../../assets/Logo.png";
+
 const ForgotPassword = () => {
   const [showModal, setShowModal] = useState(false);
 
@@ -45,7 +48,7 @@ const ForgotPassword = () => {
         )}
         <C.leftArea>
           <div className="header-leftArea">
-            <h1>Logo</h1>
+            <img src={Logo} alt="" />
           </div>
 
           <C.Form>

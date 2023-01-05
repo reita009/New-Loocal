@@ -25,11 +25,15 @@ export const LeftBar = styled.div`
 
   .wrhap-logo {
     display: flex;
-    background-color: #466aa9;
+    background-color: #2f67b2;
     height: 180px;
     color: #fff;
     justify-content: center;
     align-items: center;
+
+    img {
+      height: 100px;
+    }
 
     .icon {
       position: absolute;
@@ -44,14 +48,6 @@ export const LeftBar = styled.div`
       cursor: pointer;
     }
   }
-`;
-
-export const Logo = styled.img`
-  height: 150px;
-  width: 100%;
-  object-fit: cover;
-  margin-bottom: 70px;
-  border-radius: 0px 0px 24px 0px;
 `;
 
 export const BtnGroup = styled.div`
