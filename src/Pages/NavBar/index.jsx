@@ -21,7 +21,7 @@ import Logo from "../../assets/Logo.png";
 
 const NavBar = () => {
   const [check, setCheck] = useState([
-    { notice: false },
+    { notice: true },
     { dashboard: false },
     { requests: false },
     { finance: false },
