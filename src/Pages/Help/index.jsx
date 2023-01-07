@@ -67,7 +67,7 @@ const Help = () => {
 
         <C.Form>
           <div className="login">
-            <Link to="/login">
+            <Link to="/">
               <ArrowBackIcon className="icon" />
             </Link>
             <h1>Login</h1>

@@ -132,7 +132,7 @@ const NavBar = () => {
 
             <C.Footer>
               <C.BtnGroup>
-                <Link to="/login">
+                <Link to="/">
                   <C.BtnExit>
                     <ExitToAppIcon className="icon" />
                     <span>Sair</span>

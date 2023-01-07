@@ -4,11 +4,12 @@ export const Container = styled.div`
   width: 80%;
   display: flex;
   flex-direction: column;
-  height: 2000px;
+  height: 100vh;
 `;
 
 export const Form = styled.form`
   width: 90%;
+  height: calc(100vh - 130px);
   padding: 80px 140px;
   display: flex;
   flex-direction: column;
@@ -18,6 +19,18 @@ export const Form = styled.form`
   border-radius: 24px;
   margin-top: 24px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  overflow: scroll;
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 227.94px;
+    right: 1px;
+    top: calc(50% - 227.94px / 2 - 158.03px);
+    border-radius: 60px;
+  }
+  ::-webkit-scrollbar-thumb {
+    border-radius: 50px;
+    background: #bbbbbb;
+  }
 
   button {
     display: flex;
