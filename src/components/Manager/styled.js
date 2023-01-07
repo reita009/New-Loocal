@@ -22,10 +22,6 @@ export const Form = styled.form`
   overflow: scroll;
   ::-webkit-scrollbar {
     width: 6px;
-    height: 227.94px;
-    right: 1px;
-    top: calc(50% - 227.94px / 2 - 158.03px);
-    border-radius: 60px;
   }
   ::-webkit-scrollbar-thumb {
     border-radius: 50px;
